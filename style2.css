@@ -71,6 +71,32 @@ body {
     transition: .3s;
 }
 
+.overlay-text {
+    position: absolute;
+    padding: 10px;
+    top: 70;
+    font-size: 17px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #000;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    padding-left: 10px;
+}
+
+.overlay-text h3{
+    color: orange;
+    padding-bottom: 20px;
+}
+
+
+.poster:hover .overlay-text {
+    opacity: 0;
+}
+
 .card:hover .poster img {
     transform: scale(1.1);
 }
@@ -208,6 +234,27 @@ body {
     border: 1px solid #888;
     border-radius: 20px;
     width: 80%;
+  }
+
+  .popup-form2 form  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 10px;
+
+  }
+
+  .popup-form2 form  p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 10px;
   }
 
   .close-button2 {

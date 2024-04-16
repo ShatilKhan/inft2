@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #47289d;
+    background: #08ed39;
 }
 
 .wrapper {
@@ -71,6 +71,32 @@ body {
     transition: .3s;
 }
 
+.overlay-text {
+    position: absolute;
+    padding: 10px;
+    top: 70;
+    font-size: 17px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #000;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    padding-left: 10px;
+}
+
+.overlay-text h3{
+    color: orange;
+    padding-bottom: 20px;
+}
+
+
+.poster:hover .overlay-text {
+    opacity: 0;
+}
+
 .card:hover .poster img {
     transform: scale(1.1);
 }
@@ -88,6 +114,11 @@ body {
     color: #fff;
     z-index: 2;
 }
+
+.desc{
+    z-index: 3;
+}
+
 
 .card:hover .details {
     bottom: 0;
@@ -178,10 +209,11 @@ body {
 }
 
 .popup-form form h2{
-    color: orange;
-    font-weight: bold;
+    display: flex;
     align-items: center;
     justify-content: center;
+    color: orange;
+    font-weight: bold;
 }
 
 .popup-form form {
@@ -204,6 +236,8 @@ body {
 
 .popup-form form  a {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 10px;
     padding: 10px 20px;
@@ -334,4 +368,10 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+}
+
+
+button a{
+    color: white;
+    text-decoration: none;
 }
