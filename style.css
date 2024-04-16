@@ -180,6 +180,8 @@ body {
 .popup-form form h2{
     color: orange;
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
 }
 
 .popup-form form {
@@ -304,7 +306,7 @@ body {
 }
 
 .pm{
-    display: flex;
+    display: none;
     position: fixed;
     align-items: center;
     justify-content: center;
